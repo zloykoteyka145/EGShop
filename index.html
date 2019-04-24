@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -8,10 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<link rel="stylesheet" type="text/css" href="css/card.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<script charset = "utf-8" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script src="js/slider.js"></script>
-	<script src="js/getinfo.js"></script>
+	<script charset = "utf-8" src="js/slider.js"></script>
+	<script charset = "utf-8" src="js/getinfo.js"></script>
 	<title>EGShop</title>
 </head>
 	<body>
@@ -76,59 +77,88 @@
 			<!-- Cards -->
 			<span class="goods">Товары</span>
 			<!-- 1 -->
-				<div class="card">
-				  <div class="cardimg">
-				    <div class="img1">
-
-				    </div>
-				  </div>
-				  <div class="cardtext">
-				      <span class="cardname slidername1"></span>
-				      <span class="carddesc sliderdesc1"></span>
-				      <div class="cardprice">
-				        <span class="sliderprice1"></span> ₽
-				      </div>
-				  </div>
-				  <div class="cardbutton">
-				    <span class="cardbuttontext">Купить</span>
-				  </div>
-				</div>
-				<!-- 2 -->
 					<div class="card">
 					  <div class="cardimg">
-					    <div class="img2">
+					    <div class="_cardimg1">
 
 					    </div>
 					  </div>
 					  <div class="cardtext">
-					      <span class="cardname slidername2"></span>
-					      <span class="carddesc sliderdesc2"></span>
+					      <span class="cardname slidername1"></span>
+					      <span class="carddesc sliderdesc1"></span>
 					      <div class="cardprice">
-					        <span class="sliderprice2"></span> ₽
+					        <span class="sliderprice1"></span> ₽
 					      </div>
 					  </div>
-					  <div class="cardbutton">
+					  <div class="cardbutton button1">
 					    <span class="cardbuttontext">Купить</span>
 					  </div>
 					</div>
-					<!-- 3 -->
+					<!-- 2 -->
 						<div class="card">
-							<div class="cardimg">
-								<div class="img3">
+						  <div class="cardimg">
+						    <div class="_cardimg2">
 
+						    </div>
+						  </div>
+						  <div class="cardtext">
+						      <span class="cardname slidername2"></span>
+						      <span class="carddesc sliderdesc2"></span>
+						      <div class="cardprice">
+						        <span class="sliderprice2"></span> ₽
+						      </div>
+						  </div>
+						  <div class="cardbutton button2">
+						    <span class="cardbuttontext">Купить</span>
+						  </div>
+						</div>
+						<!-- 3 -->
+							<div class="card">
+								<div class="cardimg">
+									<div class="_cardimg3">
+
+									</div>
+								</div>
+								<div class="cardtext">
+										<span class="cardname slidername3"></span>
+										<span class="carddesc sliderdesc3"></span>
+										<div class="cardprice">
+											<span class="sliderprice3"></span> ₽
+										</div>
+								</div>
+								<div class="cardbutton button3">
+									<span class="cardbuttontext">Купить</span>
 								</div>
 							</div>
-							<div class="cardtext">
-									<span class="cardname slidername3"></span>
-									<span class="carddesc sliderdesc3"></span>
-									<div class="cardprice">
-										<span class="sliderprice3"></span> ₽
-									</div>
-							</div>
-							<div class="cardbutton">
-								<span class="cardbuttontext">Купить</span>
-							</div>
-						</div>
+		</div>
+		<div class="b-popup" id="popup1">
+		    <div class="b-popup-content">
+					<a href="javascript:PopUpHide()"><img src="img/close.png" class="closeicon" alt="Закрыть"></a><br />
+                    <span class="popupname popupnamef">Вы покупаете : </span><span class="popupname popupnamech"></span>
+					<form id="digiselller_form" action="https://www.oplata.info/asp2/pay.asp"method="post" class="popupform">
+						<input class="emailform form" type="email" name="email" placeholder="Почта" />
+						<input class="promoform form" type="text" name="promocode" placeholder="Промокод" />
+						<input class="cntform form" type="text" name="unit_cnt" placeholder="Кол-во"/>
+						<select required class="selector form" name = "typecurr">
+							<option value="WMR">WMR</option>
+							<option value="WMZ">WMZ</option>
+							<option value="WMX">WMX</option>
+							<option value="WMU">WMU</option>
+							<option value="PCR">PCR</option>
+							<option value="QSR">QSR</option>
+							<option value="PYU">PYU</option>
+							<option value="RCC">RCC</option>
+							<option value="MTS">MTS</option>
+							<option value="TL2">TELE2</option>
+							<option value="BLN">Beeline</option>
+							<option value="MTS">MTS</option>
+							<option value="MGF">Megafon</option>
+							<option value="GRN">GRN</option>
+						</select>
+						<input type="hidden" class="ident" name="id_d" value=""/><br><br>
+						<input type="submit" value="Купить" class="formbutton">
+					</form>
+		    </div>
 		</div>
 </body>
 </html>
