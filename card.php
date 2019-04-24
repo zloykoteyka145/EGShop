@@ -1,17 +1,14 @@
-<?php
-  require_once("index.php");
-?>
 <div class="card">
   <div class="cardimg">
-    <?php
-      require("img/$i.html");
-    ?>
+    <div class="img1">
+
+    </div>
   </div>
   <div class="cardtext">
-      <span class="cardname slidername<?=$i?>"></span>
-      <span class="carddesc sliderdesc<?=$i?>"></span>
+      <span class="cardname slidername1"></span>
+      <span class="carddesc sliderdesc1"></span>
       <div class="cardprice">
-        <span class="sliderprice<?=$i?>"></span> ₽
+        <span class="sliderprice1"></span> ₽
       </div>
   </div>
   <div class="cardbutton">
