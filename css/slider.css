@@ -27,10 +27,43 @@
 	color: #000000;
 }
 .slidertext {
-	margin: 0 auto;
-	margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-left: 80px;
 }
 .slick-prev:before,
 .slick-next:before {
   color: black;
+}
+.img1 {
+	background: url('../img/1.svg') no-repeat center center;
+	width: 492px;
+	height: 310px;
+}
+.img2 {
+	background: url('../img/2.svg') no-repeat center center;
+	width: 492px;
+	height: 310px;
+}
+.img3 {
+	background: url('../img/3.svg') no-repeat center center;
+	width: 492px;
+	height: 310px;
+}
+
+
+._cardimg1 {
+	background: url('../img/1.svg') no-repeat center center;
+	width: 401.66px;
+	height: 253.4px;
+}
+._cardimg2 {
+	background: url('../img/2.svg') no-repeat center center;
+	width: 401.66px;
+	height: 253.4px;
+}
+._cardimg3 {
+	background: url('../img/3.svg') no-repeat center center;
+	width: 401.66px;
+	height: 253.4px;
 }

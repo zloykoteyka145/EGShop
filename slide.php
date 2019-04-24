@@ -1,6 +1,8 @@
 <div>
     <div class="sliderimg">
-        <?php require_once("img/$i.html"); ?>
+         <div class="img<?=$i?>">
+
+         </div>
     </div>
     <div class="slidertext">
         <div class="slidername slidername<?=$i?>">
