@@ -1,9 +1,14 @@
 .card {
+  margin-top: 20px;
   border: 1px solid #E2E2E2;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  border-radius: 5px;
+  padding: 25px;
+  border-radius: 5px; 
+  box-shadow: 7px 9px 19px -7px rgba(0,0,0,0.75);
+}
+.cards {
+  padding: 50px;
 }
 .cardtext {
   display: flex;
